@@ -1,0 +1,22 @@
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+%font__base1 {
+    font-family: Geometria, sans-serif;
+    font-size: $font__size_base;
+    font-weight: bold;
+    color: $purple-brown;
+}
+%font__base2 {
+    @extend %font__base1;
+    line-height: 1.43em;
+}
+%font__heading {
+    font-size: $font__size_large;
+    line-height: 1.25em;
+    color: #000;
+}
