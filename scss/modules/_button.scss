@@ -1,0 +1,42 @@
+%border {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 15px;
+    border: 2px solid $purple-brown;
+}
+.btn {
+    display: block;
+    width: 145px;
+    text-align: center;
+    // line-height: 35px;
+    line-height: 1em;
+    font-weight: bold;
+    color: rgba($purple-brown, .9);
+    position: relative;
+    // border: 2px solid $purple-brown;
+    &::before {
+        @extend %border;
+        top: -10px;
+        border-bottom: none;
+    }
+    &::after {
+        @extend %border;
+        bottom: -11px;
+        border-top: none;
+    }
+}
+
+.btn__container {
+    position: relative;
+    img {
+        position: absolute;
+        width: 168px;
+        height: auto;
+        top: -7px;
+        left: 0;
+        z-index: -1;
+    }
+}
