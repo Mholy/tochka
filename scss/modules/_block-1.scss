@@ -2,7 +2,11 @@
     padding-bottom: 82px;
     position: relative;
     h1,
-    p { margin: 48px 0; }
+    p {
+        margin: 48px 0;
+        line-height: 1.43em;
+        font-weight: bold;
+    }
     &::after {
         display: block;
         content: "";
