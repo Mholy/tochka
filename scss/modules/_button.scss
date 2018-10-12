@@ -11,31 +11,30 @@
     display: block;
     width: 145px;
     text-align: center;
-    // line-height: 35px;
-    line-height: 1em;
+    line-height: 35px;
     font-weight: bold;
     color: rgba($purple-brown, .9);
     position: relative;
-    // border: 2px solid $purple-brown;
     &::before {
         @extend %border;
-        top: -10px;
+        top: 0;
         border-bottom: none;
     }
     &::after {
         @extend %border;
-        bottom: -11px;
+        bottom: 0;
         border-top: none;
     }
 }
 
 .btn__container {
+    display: inline-block;
     position: relative;
     img {
         position: absolute;
         width: 168px;
         height: auto;
-        top: -7px;
+        top: 3px;
         left: 0;
         z-index: -1;
     }
