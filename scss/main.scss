@@ -3,6 +3,9 @@
         "base/placeholders",
         "base/base";
 
-@import "modules/all";
+@import "modules/all",
+        "modules/block-1",
+        "modules/block-2",
+        "modules/button";
 
 @import "vendor/normalize.css";

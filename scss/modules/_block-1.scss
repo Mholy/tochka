@@ -1,21 +1,30 @@
-.block-1 {
-    padding-bottom: 82px;
+.block-1
+{
     position: relative;
+
+    padding-bottom: 82px;
     h1,
-    p {
-        margin: 48px 0;
-        line-height: 1.43em;
+    p
+    {
         font-weight: bold;
+        line-height: 1.43em;
+
+        margin: 48px 0;
     }
-    &::after {
-        display: block;
-        content: "";
+    &::after
+    {
         position: absolute;
+        right: 0;
         bottom: 0;
         left: 0;
-        right: 0;
+
+        display: block;
+
         height: 17px;
-        background-image: linear-gradient(to bottom, rgba($white, 0), $purple-brown);
+
+        content: '';
+
         opacity: .1;
+        background-image: linear-gradient(to bottom, rgba($white, 0), $purple-brown);
     }
 }
