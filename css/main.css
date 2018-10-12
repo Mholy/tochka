@@ -7,18 +7,23 @@
   box-sizing: border-box; }
 
 html {
+  font-size: 16px;
+  line-height: 1.2em; }
+
+body {
   font-family: Geometria, sans-serif;
-  font-size: 14px;
-  color: #231f20; }
+  color: #231f20;
+  font-size: 0.875rem;
+  line-height: 1.43em; }
 
 h1 {
-  font-size: 32px;
+  font-size: 2rem;
   font-weight: bold;
   line-height: 1.25em;
   color: #000; }
 
 h2 {
-  font-size: 26px;
+  font-size: 1.625rem;
   font-weight: bold;
   line-height: 1.23em; }
 

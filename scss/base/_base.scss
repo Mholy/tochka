@@ -9,15 +9,20 @@
 
 html
 {
-    font-family: Geometria, sans-serif;
-    font-size: $font__size_base;
+    font-size: 16px;
+    line-height: 1.2em;
+}
 
+body {
+    font-family: Geometria, sans-serif;
     color: $purple-brown;
+    font-size: 0.875rem;
+    line-height: 1.43em;
 }
 
 h1
 {
-    font-size: $font__size_large;
+    font-size: 2rem;
     font-weight: bold;
     line-height: 1.25em;
 
@@ -26,7 +31,7 @@ h1
 
 h2
 {
-    font-size: $font__size_medium;
+    font-size: 1.625rem;
     font-weight: bold;
     line-height: 1.23em;
 }
