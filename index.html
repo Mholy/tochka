@@ -14,38 +14,54 @@
 
 <body>
     <header class="block-1">
-        <h1>Тестовое задание</h1>
-        <p>На экранах до 1024px показывать CSS-анимацию. При клике на кнопку плавный scroll до следующего блока.</p>
-        <a href="#block-2" class="btn">Подробнее</a>
+        <div class="wrapper">
+            <div class="block-1__preview">
+                <h1>Тестовое задание</h1>
+                <p>На экранах до 1024px показывать CSS-анимацию. При клике на кнопку плавный scroll до следующего блока.</p>
+                <div class="btn__container">
+                    <a href="#block-2" class="btn">Подробнее</a>
+                    <img src="img/btn-bg.png" alt="">
+                </div>
+            </div>
+            <div class="animation-wallet">
+                <img class="animation-wallet__wallet" src="img/wallet.png" alt="">
+                <img class="animation-wallet__shadow" src="img/shadow.png" alt="">
+                <img class="animation-wallet__splash" src="img/splash.png" alt="">
+            </div>
+        </div>
     </header>
     <section class="block-2" id="block-2">
-        <h1>Колонки с иконками</h1>
-        <ul class="icon-cols">
-            <li>
-                <img src="img/icon_3.svg" alt="">
-                Банковские карты
-            </li>
-            <li>
-                <img src="img/icon_2.svg" alt="">
-                Мессенджер
-            </li>
-            <li>
-                <img src="img/icon_4.svg" alt="">
-                Интернет-банк
-            </li>
-            <li>
-                <img src="img/icon_1.svg" alt="">
-                Электронный кошелёк
-            </li>
-            <li>
-                <img src="img/icon_5.svg" alt="">
-                Баланс телефона
-            </li>
-        </ul>
+        <div class="wrapper">
+            <h2>Колонки с иконками</h2>
+            <ul class="icon-cols">
+                <li>
+                    <img src="img/icon_3.svg" alt="">
+                    <span>Банковские карты</span>
+                </li>
+                <li>
+                    <img src="img/icon_2.svg" alt="">
+                    <span>Мессенджер</span>
+                </li>
+                <li>
+                    <img src="img/icon_4.svg" alt="">
+                    <span>Интернет-банк</span>
+                </li>
+                <li>
+                    <img src="img/icon_1.svg" alt="">
+                    <span>Электронный кошелёк</span>
+                </li>
+                <li>
+                    <img src="img/icon_5.svg" alt="">
+                    <span>Баланс телефона</span>
+                </li>
+            </ul>
+        </div>
     </section>
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+    <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+    </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 </body>

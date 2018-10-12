@@ -1,13 +1,107 @@
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+*,
+*:before,
+*:after
+{
     box-sizing: border-box;
 }
 
-html {
-    @extend %font__base1;
+html
+{
+    font-size: 16px;
+    line-height: 1.2em;
 }
 
-h1 {
-    @extend %font__heading;
+body
+{
+    font-family: Geometria, sans-serif;
+    font-size: .875rem;
+    line-height: 1.43em;
+
+    color: $purple-brown;
+}
+
+h1,
+h2
+{
+    font-weight: bold;
+
+    margin: 0;
+}
+
+h1
+{
+    font-size: 2rem;
+    line-height: 1.25em;
+
+    color: #000;
+}
+
+h2
+{
+    font-size: 1.625rem;
+    line-height: 1.23em;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+.wrapper
+{
+    width: 288px;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: $break-sm)
+{
+    body
+    {
+        font-size: 1rem;
+        line-height: 1.5em;
+    }
+    h1
+    {
+        font-size: 3rem;
+        line-height: 1.17em;
+    }
+    h2
+    {
+        font-size: 2.5rem;
+        line-height: 1.2em;
+    }
+    .wrapper
+    {
+        width: 576px;
+    }
+}
+
+@media only screen and (min-width: $break-md)
+{
+    .wrapper
+    {
+        width: 864px;
+    }
+}
+@media only screen and (min-width: $break-lg)
+{
+    body
+    {
+        font-size: 1.125rem;
+        line-height: 1.56em;
+    }
+    h1
+    {
+        font-size: 4.5rem;
+        line-height: 1.11em;
+    }
+    h2
+    {
+        font-size: 3.5rem;
+        line-height: 1.14em;
+    }
+    .wrapper
+    {
+        width: 1152px;
+    }
 }

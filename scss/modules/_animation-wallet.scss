@@ -1,0 +1,70 @@
+.animation-wallet__wallet,
+.animation-wallet__shadow,
+.animation-wallet__splash
+{
+    position: absolute;
+}
+
+.animation-wallet__wallet
+{
+    -webkit-animation: wallet 2s ease-in-out .5s infinite alternate;
+            animation: wallet 2s ease-in-out .5s infinite alternate;
+}
+
+.animation-wallet__shadow
+{
+    -webkit-animation: shadow 2s ease-in-out .5s infinite alternate;
+            animation: shadow 2s ease-in-out .5s infinite alternate;
+}
+
+@-webkit-keyframes wallet
+{
+    0%
+    {
+        -webkit-transform: translateY( 0 );
+                transform: translateY( 0 );
+    }
+    100%
+    {
+        -webkit-transform: translateY( -50px );
+                transform: translateY( -50px );
+    }
+}
+
+@keyframes wallet
+{
+    0%
+    {
+        -webkit-transform: translateY( 0 );
+                transform: translateY( 0 );
+    }
+    100%
+    {
+        -webkit-transform: translateY( -50px );
+                transform: translateY( -50px );
+    }
+}
+
+@-webkit-keyframes shadow
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: .5;
+    }
+}
+
+@keyframes shadow
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: .5;
+    }
+}
